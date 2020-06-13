@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Coding Quiz Challenge</title>
+</head>
+
+<body>
+    <nav class="navbar flex-column flex-md-row bg-info">
+        <a class="navbar-brand text-white" href="./index.html">Coding Quiz Challenge</a>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./highscore.html">View Scoreboard</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <div class="card text-center m-5 border border-primary">
+            <div class="card-header bg-primary">
+                <h3>Ready for a Challenge?</h3>
+                <div class="countdown">
+                    <span id="timer"></span>
+                    <span>seconds</span>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <p id="pElement"> Try to answer code-related questions within the time limit. You will have 25 seconds to complete 9 code related questions. Keep in mind that incorrect answers will penalize your time by five seconds!</p>
+            </div>
+            <div id="start">
+                <button type="button" class="btn btn-primary active">Start Quiz</button>
+            </div>
+            <div id="quiz" style="display: none;">
+
+                <div id="question"></div>
+                <div id="choices">
+                    <div class="choice" id="A"></div>
+                    <div class="choice" id="B"></div>
+                    <div class="choice" id="C" ></div>
+                    <div class="choice" id="D"></div>
+                    <br>
+                    <div id="answer"></div>
+                </div>
+            </div>
+            <div id="score" style="display: none;">score</div>
+            <div id="final" style="display: none;">
+                <input type="text" id="myInput" placeholder="Intial Here">
+                <button id="submit">submit
+                    </button>
+
+            
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer fixed-bottom mt-auto py-2 text-center bg-info">
+        <div class="container">
+            <span class="text-white"> Anita Ganti </span>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    
+</body>
+
+</html>

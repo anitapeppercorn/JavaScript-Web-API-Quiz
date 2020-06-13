@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    color: rgb(0, 0, 0)
+}
+h3{
+    display: inline-block;
+    text-align: center;
+
+}
+h2{
+    display: inline;
+}
+
+.countdown{
+    font-size: 20px;
+    float: right;
+}
+
+#question{
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 10px;
+    display: inline-block;
+}
+.choice{
+    font-size: 20px;
+    cursor: pointer;   
+}
+.choice:hover{
+    background-color: rgb(196, 149, 228);;
+}
+.choice:active{
+    /* bright purple*/
+    color: rgb(130, 21, 202);;
+}
+#answer{
+    background-color: rgb(255, 255, 255);
+    display: inline;
+    color: rgb(89, 87, 87)
+    font-size: 25px;
+}
