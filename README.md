@@ -1,7 +1,9 @@
 # The Quiz Assignment:
-
-
-As a web developer, I have been asked to complete a coding assessment, to create a combination of multiple-choice questions and interactive challenges. Thus I have built a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by JavaScript code. It features a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+#Hosted URL Location:  https://anitapeppercorn.github.io/JavaScript-Web-API-Quiz/
+#Github repository location: https://github.com/anitapeppercorn/JavaScript-Web-API-Quiz
+ 
+# Description
+As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
 ## User Story
 
@@ -25,4 +27,3 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
-
