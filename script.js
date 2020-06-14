@@ -182,5 +182,5 @@ function submitScore() {
     var initialInput = document.querySelector("#myInput").value;
     localStorage.setItem("score", JSON.stringify(score));
     localStorage.setItem("initial", JSON.stringify(initialInput));
-    window.location.href = './leaderBoard.html';
+    window.location.href = './highscore.html';
 }
