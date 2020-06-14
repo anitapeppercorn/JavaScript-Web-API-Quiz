@@ -9,7 +9,7 @@ var choiceD = document.getElementById("D");
 var scoreDiv = document.getElementById("score");
 var pEl = document.getElementById("pElement");
 var answerCheck = document.getElementById("answer");
-var sumbitButton = document.getElementById("submit");
+var submitButton = document.getElementById("submit");
 var localStorage = window.localStorage;
 
 var answerCheckTimeOut;
@@ -41,40 +41,40 @@ function clearTimerCountDown() {
 //Create questions
 var questions = [
     {
-        question: "What does HTML stands for?",
-        choiceA: "Home Tool Makeup language",
-        choiceB: "Hyperlinks and text Markup Language",
-        choiceC: "Hyper Text Markup Language",
-        choiceD: "Hyper Tool Makeup Language",
+        question: "Commonly used data types DO NOT include?",
+        choiceA: "Strings",
+        choiceB: "Booleans",
+        choiceC: "Alerts",
+        choiceD: "Numbers",
         correct: "C",
     }, {
-        question: "What does CSS stands for?",
-        choiceA: "Colorful Style Sheets",
-        choiceB: "Cascading Style Sheets",
-        choiceC: "Computer Style Sheets",
-        choiceD: "Concept Style Sheets",
-        correct: "B",
+        question: "What is the condition in an if /else statement enclosed in?",
+        choiceA: "Quotes",
+        choiceB: "Curly brackets",
+        choiceC: "Parenthesis",
+        choiceD: "Square brackets",
+        correct: "C",
     }, {
-        question: "What is considered to be the most popular programming language in the world?",
-        choiceA: "JavaScript",
-        choiceB: "HTML",
-        choiceC: "Python",
-        choiceD: "Java",
-        correct: "A",
-    }, {
-        question: "In CSS and HTML colors are displayed by combining these three shades of light",
-        choiceA: "White, Pink and Blue",
-        choiceB: "Yellow, Blue, and Green.",
-        choiceC: "Violet, Red and Orange",
-        choiceD: "Red, Green, and Blue.",
+        question: "What can arrays in JavaScript be used to store?",
+        choiceA: "Numbers and strings",
+        choiceB: "Other arrays",
+        choiceC: "Booleans",
+        choiceD: "All of the above",
         correct: "D",
     }, {
-        question: "What elements are used to test for TRUE or False values stored in variables?",
-        choiceA: "Function",
-        choiceB: "Comparison and Logical Operators",
-        choiceC: "Conditional Statements",
-        choiceD: "DOM",
-        correct: "B",
+        question: "What must string values be enclosed within, when being assigned to variables?",
+        choiceA: "Commas",
+        choiceB: "Curly braces",
+        choiceC: "Quotes",
+        choiceD: "Parenthesis",
+        correct: "C",
+    }, {
+        question: "Which of the items below is a very useful tool, used during development, to print content to the debugger?",
+        choiceA: "JavaScript",
+        choiceB: "terminal / bash",
+        choiceC: "for loops",
+        choiceD: "console log",
+        correct: "D",
     }, {
         question: "What is a JavaScript element that represents either TRUE or FALSE values",
         choiceA: "Array",
@@ -132,7 +132,7 @@ function renderQuestion() {
 function checkAnswer(answer) {
     if (answer === questions[runningQuestion].correct) {
         score++;
-        answerCheck.innerHTML = "You got it!";
+        answerCheck.innerHTML = "Correct!";
     } else {
         timerCountDown = timerCountDown - 5;
         answerCheck.innerHTML = "Wrong!"
@@ -173,11 +173,11 @@ function scoreRender(endType) {
         alert("Time is out!");
     }
     final.style.display = "block"
-    quiz.innerHTML = "Your Score:" + score + "/9."
+    quiz.innerHTML = "Your Score is:" + score
 
 }
 
-sumbitButton.addEventListener("click", submitScore)
+submitButton.addEventListener("click", submitScore)
 function submitScore() {
     var initialInput = document.querySelector("#myInput").value;
     localStorage.setItem("score", JSON.stringify(score));

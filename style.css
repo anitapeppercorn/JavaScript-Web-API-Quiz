@@ -4,9 +4,6 @@ body{
     color: rgb(0, 0, 0)
 }
 /* Change color of navbar from Bootstrap to custom*/
-.navbar-dark .navbar-nav .nav-link {
-    color: rgb(255, 255, 255);
-  }
 
 h3{
     display: inline-block;
@@ -33,15 +30,15 @@ h2{
     cursor: pointer;   
 }
 .choice:hover{
-    background-color: rgb(196, 149, 228);;
+    background-color: rgb(196, 149, 228);
 }
 .choice:active{
     /* bright purple*/
-    color: rgb(130, 21, 202);;
+    color: rgb(130, 21, 202);
 }
 #answer{
     background-color: rgb(255, 255, 255);
     display: inline;
-    color: rgb(89, 87, 87)
+    color: rgb(89, 87, 87);
     font-size: 25px;
 }
