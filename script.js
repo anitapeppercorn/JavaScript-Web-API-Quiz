@@ -22,7 +22,7 @@ function clearAnswerTimeOut() {
     clearTimeout(answerCheckTimeOut);
 }
 
-var timerCountDown = 25;
+var timerCountDown = 120;
 var timerCountDownTimer;
 function setTimerCountDownTimeOut() {
     timerCountDownTimer = setInterval(function () {
@@ -58,7 +58,7 @@ var questions = [
         question: "What is considered to be the most popular programming language in the world?",
         choiceA: "JavaScript",
         choiceB: "HTML",
-        choiceC: "Pathon",
+        choiceC: "Python",
         choiceD: "Java",
         correct: "A",
     }, {

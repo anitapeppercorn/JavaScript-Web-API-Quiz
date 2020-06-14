@@ -3,6 +3,11 @@ body{
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
     color: rgb(0, 0, 0)
 }
+/* Change color of navbar from Bootstrap to custom*/
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+  }
+
 h3{
     display: inline-block;
     text-align: center;
